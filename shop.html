@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Style.css" />
+    <title>Ecommerce website project</title>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="./LOGO.png" alt="" /></a>
+      <div>
+        <ul  id="navbar" class="navbar-items text-2xl font-semibold">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="Brands.html">Brands</a></li>
+          <li><a class="active" href="./shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="./login.html">Login</i></a>
+          </li>
+
+          <i  id="close" class="fa-solid fa-square-xmark text-4xl"></i>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href=""><i class="fa-solid fa-bag-shopping text-3xl pr-5 text-green-500"></i></a>
+        <i id="bar" class="fa-solid fa-outdent text-3xl"></i>
+      </div>
+    </section>
+
+ 
+
+    <section class="shoping_page">
+       <h4 class=" text-2xl font-bold p-12 animate-bounce">Shop Now
+        
+       </h4>
+
+     
+     
+
+    </section>
+    
+
+    
+
+    <section id="features" class="p-5 pt-12">
+      <div
+        class="feature flex flex-wrap items-center justify-around text-center text-xl font-bold"
+      >
+        <div class="fe-box" data-aos="flip-left">
+          <img class="w-44 h-44 p-1" src="data:image/jpeg;base64,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" alt="" />
+          <h4 class="p-2 m-1 text-black bg-pink-300">Cap</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-left">
+          <img class="w-44 h-44 p-1" src="https://openroad.in/wp-content/uploads/2024/09/HoleshotPRO_FlourescentGreen-04_f8d8ac31-427e-431b-ba60-4f33754c9733_900x-324x324.webp" alt="" />
+          <h4 class="p-2 m-1 text-black bg-yellow-300">Gloves</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-left">
+          <img class="w-44 h-44  p-1" src="https://5.imimg.com/data5/SELLER/Default/2021/7/HU/MP/BC/130118910/whatsapp-image-2021-07-29-at-7-42-00-pm-500x500.jpeg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-green-300">Socks</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-left">
+          <img class="w-44 h-44 p-1" src="https://rukminim2.flixcart.com/image/850/1000/jcw9ifk0/thermal/n/t/y/l-top-mod6-shopping-store-original-imaffwnbzesdhbga.jpeg?q=90&crop=false" alt="" />
+          <h4 class="p-2 m-1 text-black bg-yellow-300">Sweatshirts</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-left">
+          <img class="w-44 h-44 p-1" src="https://www.montecarlo.in/cdn/shop/products/6220BM4BL-0-38_2-GTs-053503-rsF.jpg?v=1697008314&width=1025" alt="" />
+          <h4 class="p-2 m-1 text-black bg-sky-300">Joggers</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-left">
+          <img class="w-44 h-44 p-1" src="https://i.ebayimg.com/images/g/1SkAAOSwlf1mcY3m/s-l1200.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-orange-300">Sun Glases</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <h2 class=" text-center text-4xl font-bold text-green-500 p-2">Featured Prodects</h2>
+      <p class=" text-center text-xl font-bold p-2">Summer collection New Modern Design</p>
+      <div class="flex flex-wrap items-center justify-around pl-16 pr-16">
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f1.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f2.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 299</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f3.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 299</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div  class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f4.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-around pl-16 pr-16">
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f5.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Half Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f6.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Full Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 499</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f7.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Lagy</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div  class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/f8.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Kurti</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 199</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        
+      </div>
+    </section>
+
+     
+    <section id="products">
+      <h2 class=" text-center text-4xl font-bold text-green-500 p-2">New Arrivals</h2>
+      <p class=" text-center text-xl font-bold p-2">Summer collection New Modern Design</p>
+      <div class="flex flex-wrap items-center justify-around pl-16 pr-16">
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n1.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n2.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Full Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 299</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n3.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">full Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 299</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div  class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n4.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">full Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 299</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center justify-around pl-16 pr-16">
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n5.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Half Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n6.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Half Pant</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n7.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">full Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 399</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div  class="card border border-black w-60 m-5" data-aos="zoom-in">
+          <img class=" p-2" src="./images/product img/n8.jpg" alt="" />
+          <div class="m-2">
+            <span >Adidas</span>
+            <h5 class="text-xl font-bold">Half Shirt</h5>
+           <div class="flex">
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star text-yellow-500"></i>
+            <i class="fas fa-star"></i>
+           </div>
+           <h4 class=" text-xl font-bold">Rs. 299</h4>
+          </div>
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section id="features" class="p-5 pt-12">
+      <div
+        class="feature flex flex-wrap items-center justify-around text-center text-xl font-bold"
+      >
+        <div class="fe-box" data-aos="flip-up">
+          <img class="w-44 h-52 p-1" src="./images/product img/shirt_img-removebg-preview.png" alt="" />
+          <h4 class="p-2 m-1 text-black bg-pink-300">Shirt</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-down">
+          <img class="w-44 h-52 p-1" src="./images/product img/jiens img.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-yellow-300">Jeans</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-up">
+          <img class="w-44 h-52 p-1" src="./images/product img/t-shirt img.webp" alt="" />
+          <h4 class="p-2 m-1 text-black bg-green-300">T-shirt</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-down">
+          <img class="w-44 h-52 p-1" src="./images/product img/lower.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-yellow-300">Lower</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-up">
+          <img class="w-44 h-52 p-1" src="https://i5.walmartimages.com/asr/5e6f8a2b-4fc1-422e-b668-f0d60f6e946c.d584e3aac7bbd4a88499ffca106d7957.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="" />
+          <h4 class="p-2 m-1 text-black bg-sky-300">Joggers</h4>
+        </div>
+        <div class="fe-box" data-aos="flip-down">
+          <img class="w-44 h-52 p-1" src="./images/product img/jacket.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-orange-300">Jackets</h4>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="banner-3" class="font-bold text-white">
+      <div class="banner-box box1 m-2 "  data-aos="fade-up">
+         <h2 class="text-2xl m-2 mt-32">SEASONAL SALE</h2>
+         <h3>Winter Collection -50% OFF</h3>
+       </div>
+       <div class="banner-box box2 m-2" data-aos="fade-down">
+        <h2 class="text-2xl m-2  mt-28">NEW FOOTWEAR COLLECTION</h2>
+        <h3>Spring / Summer 2022</h3>
+      </div>
+      <div class="banner-box box3 m-2" data-aos="fade-up">
+        <h2 class="text-2xl m-2  mt-32">T-Shirts</h2>
+        <h3>New Trendy ProductsF</h3>
+      </div>
+    </section> 
+
+    <section id="features" class="p-5 pt-12">
+      <div
+        class="feature flex flex-wrap items-center justify-around text-center text-xl font-bold"
+      >
+        <div class="fe-box" data-aos="zoom-in">
+          <img class="w-44 h-52 p-1" src="./images/img1.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-pink-300">Ball Gown</h4>
+        </div>
+        <div class="fe-box" data-aos="zoom-in">
+          <img class="w-44 h-52 p-1" src="./images/img2.webp" alt="" />
+          <h4 class="p-2 m-1 text-black bg-yellow-300">A-Line Dress</h4>
+        </div>
+        <div class="fe-box" data-aos="zoom-in">
+          <img class="w-44 h-52 p-1" src="./images/img3.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-green-300">Sundress</h4>
+        </div>
+        <div class="fe-box" data-aos="zoom-in">
+          <img class="w-44 h-52 p-1" src="./images/img4.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-yellow-300">Tulle Dress</h4>
+        </div>
+        <div class="fe-box" data-aos="zoom-in">
+          <img class="w-44 h-52 p-1" src="./images/img5.avif" alt="" />
+          <h4 class="p-2 m-1 text-black bg-sky-300"> Frocks</h4>
+        </div>
+        <div class="fe-box" data-aos="zoom-in">
+          <img class="w-44 h-52 p-1" src="./images/img6.jpg" alt="" />
+          <h4 class="p-2 m-1 text-black bg-orange-300">Casual Dress</h4>
+        </div>
+      </div>
+    </section>
+   
+    <section id="newsletter" class="flex flex-wrap justify-between items-center mt-5 p-5">
+      <div class="newsText ">
+        <h4 class="text-3xl"> Sign Up for Newsletters</h4>
+        <p class="text-2xl">Get E-mail updates about our latest Shop and <span class="text-white font-bold">Special Offers</span> </p>
+
+      </div>
+      <div class="form">
+        <input class="h-12 p-3 text-xl width-full rounded-lg outline-none" type="text" placeholder="Enter your mail">
+         <button class=" text-xl bg-green-500 h-12 p-2 m-1 rounded-full">Sign Up</button>
+      </div>
+
+    </section>
+
+    <footer class="bg-slate-200">
+      <div class="flex justify-between flex-wrap p-12 text-xl ">
+       <div class="col pt-5">
+         <img class="w-24 p-2" src="./LOGO.png" alt="logo">
+         <h4><strong>Contact</strong></h4>
+         <p><a href="tel:916398144382">Mob : +916398144382</a></p>
+         <p><a href="mailto:gauravcse521@gmail.com">Email : gauravcse521@gmail.com</a></p>
+         <p>Modinager , Ghazaiabd, UP </p>
+         <div class="text-2xl">
+           <a href=""><i class="fa-brands fa-facebook p-2"></i></a>
+           <a href=""><i class="fa-brands fa-instagram p-2"></i></a>
+           <a href=""><i class="fa-brands fa-twitter p-2"></i></a>
+           <a href=""><i class="fa-brands fa-youtube p-2"></i></a>
+           
+         </div>
+       </div>
+       <div class=" col flex flex-col pt-5">
+         <h4 class="pl-1"><strong>About</strong></h4>
+         <a  class="m-1" href="">About Us</a>
+         <a  class="m-1" href=""> Delivery Information</a>
+ 
+         <a  class="m-1" href=""> Privacy policy</a>
+ 
+         <a  class="m-1" href="">Term & Condition</a>
+ 
+         <a  class="m-1" href=""> Contact Us</a>
+ 
+       </div>
+ 
+       <div class=" col flex flex-col pt-5">
+         <h4 class="pl-1"><strong>My Account</strong></h4>
+         <a  class="m-1" href="">Sign In</a>
+         <a  class="m-1" href="">My wishlist</a>
+ 
+         <a  class="m-1" href="">Track Order</a>
+ 
+         <a  class="m-1" href="">Help</a>
+ 
+       </div>
+ 
+       <div class="col pt-5">
+         <h4 class="pl-1"><strong>Main Branch</strong></h4>
+         <div class="flex flex-col">
+          <a class="m-1" href=""></i>Bandra Mumbai</a>
+          <a class="m-1" href=""></i>Jayanagar Banglore</a>
+          <a class="m-1" href=""></i>Gurugram</a>
+          <a class="m-1" href=""></i>Delhi</a>
+         </div>
+       </div>
+      </div>
+     </footer>
+
+    <div class="copyright-sec text-center text-xl font-bold  p-2 bg-slate-400">
+      <p>Copyrights © 2025 – All rights reserved. <span class="text-red-500"> <a href="">Bhoomi Techzoon Pvt Ltd</a></span> </p>
+    </div>
+    <script src="./main.js"></script>
+     <!-- AOS liberary Link -->
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+     integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+   <script>
+     AOS.init({
+       Duration: 1000,
+       offset: 200,
+       delay: 100,
+     });
+   </script>
+  </body>
+</html>

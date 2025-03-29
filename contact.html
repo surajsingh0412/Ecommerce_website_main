@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind css cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Style.css" />
+
+    
+     <!-- AOS css Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Ecommerce website project</title>
+    <style>
+        /* Custom Colors to match the design */
+        .bg-custom-blue { background-color: #023a77; }
+        .bg-custom-lightblue { background-color: #9ad8df; }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="./LOGO.png" alt="" /></a>
+      <div>
+        <ul id="navbar" class="navbar-items text-2xl font-semibold">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="Brands.html">Brands</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a class="active" href="./contact.html">Contact</a></li>
+          <li>
+            <a  href="./login.html">Login</a>
+          </li>
+
+          <i id="close" class="fa-solid fa-square-xmark text-4xl"></i>
+        </ul>
+      </div>
+      <div id="mobile">
+        <a href=""
+          ><i class="fa-solid fa-bag-shopping text-3xl pr-5 text-green-500"></i
+        ></a>
+        <i id="bar" class="fa-solid fa-outdent text-3xl"></i>
+      </div>
+    </section>
+
+    
+    <section class="shoping_page">
+        <h4 class=" text-2xl font-bold p-12 animate-bounce">Conatct Us
+         
+        </h4>
+ 
+      
+      
+ 
+     </section>
+     <div class="shop-box " data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+       <a href="" class="text-4xl mt-2 blink-animation"> 
+        <img src="./Brands.html" alt="">
+       </a>
+     </div>
+
+    <div class="bg-custom-blue flex items-center justify-center min-h-screen">
+            <div class="w-full max-w-5xl p-8">
+                <!-- Contact Info Section -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                    <!-- Office -->
+                    <div class="text-center bg-white p-6 shadow-lg rounded-lg" data-aos="fade-down">
+                        <div class="text-4xl mb-4 text-blue-500">
+                            <i class="fas fa-map-marker-alt"></i> <!-- Replace with icon if needed -->
+                        </div>
+                        <h3 class="text-lg font-bold">OUR MAIN OFFICE</h3>
+                        <p class="text-sm">124, Bazaar Rd, Santosh Nagar, Bandra West, Mumbai, Maharashtra</p>
+                    </div>
+                    <!-- Phone -->
+                    <div class="text-center bg-white p-6 shadow-lg rounded-lg" data-aos="fade-down">
+                        <div class="text-4xl mb-4 text-blue-500">
+                            <i class="fas fa-phone-alt"></i> <!-- Replace with icon if needed -->
+                        </div>
+                        <h3 class="text-lg font-bold">PHONE NUMBER</h3>
+                        <p class="text-sm">+91 6398144382</p>
+                        <p class="text-sm">888-0123-4567 (Toll Free)</p>
+                    </div>
+                    <!-- Fax -->
+                    <div class="text-center bg-white p-6 shadow-lg rounded-lg" data-aos="fade-down">
+                        <div class="text-4xl mb-4 text-blue-500">
+                            <i class="fas fa-fax"></i> <!-- Replace with icon if needed -->
+                        </div>
+                        <h3 class="text-lg font-bold">FAX</h3>
+                        <p class="text-sm">1-234-567-8900</p>
+                    </div>
+                    <!-- Email -->
+                    <div class="text-center bg-white p-6 shadow-lg rounded-lg" data-aos="fade-down">
+                        <div class="text-4xl mb-4 text-blue-500">
+                            <i class="fas fa-envelope"></i> <!-- Replace with icon if needed -->
+                        </div>
+                        <h3 class="text-lg font-bold">EMAIL</h3>
+                        <a href="mailto:gauravcse521@gmail.com" class="text-sm text-blue-500">gauravcse521@gmail.com</a>
+                    </div>
+                </div>
+        
+                <!-- Contact Form Section -->
+                <div class="bg-custom-lightblue p-8 rounded-lg shadow-lg" data-aos="zoom-in">
+                    <h2 class="text-center text-2xl font-bold text-blue-900 mb-6">Contact Us</h2>
+                    <form>
+                        <div class="mb-6">
+                            <input type="text" placeholder="Enter your Name" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                          <input type="number" placeholder="Mobile Number" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                      </div>
+                        <div class="mb-6">
+                            <input type="email" placeholder="Enter a valid email address" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Your message" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="5"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+
+
+    <footer class="bg-slate-200">
+      <div class="flex justify-between flex-wrap p-12 text-xl ">
+       <div class="col pt-5">
+         <img class="w-24 p-2" src="./LOGO.png" alt="logo">
+         <h4><strong>Contact</strong></h4>
+         <p><a href="tel:916398144382">Mob : +91 6398144382</a></p>
+         <p><a href="mailto:gauravcse521@gmail.com">Email : gauravcse521@gmail.com</a></p>
+         <p>Modinager, Ghazaiabd, UP </p>
+         <div class="text-2xl">
+           <a href=""><i class="fa-brands fa-facebook p-2"></i></a>
+           <a href=""><i class="fa-brands fa-instagram p-2"></i></a>
+           <a href=""><i class="fa-brands fa-twitter p-2"></i></a>
+           <a href=""><i class="fa-brands fa-youtube p-2"></i></a>
+           
+         </div>
+       </div>
+       <div class=" col flex flex-col pt-5">
+         <h4 class="pl-1"><strong>About</strong></h4>
+         <a  class="m-1" href="">About Us</a>
+         <a  class="m-1" href=""> Delivery Information</a>
+ 
+         <a  class="m-1" href=""> Privacy policy</a>
+ 
+         <a  class="m-1" href="">Term & Condition</a>
+ 
+         <a  class="m-1" href=""> Contact Us</a>
+ 
+       </div>
+ 
+       <div class=" col flex flex-col pt-5">
+         <h4 class="pl-1"><strong>My Account</strong></h4>
+         <a  class="m-1" href="">Sign In</a>
+         <a  class="m-1" href="">My wishlist</a>
+ 
+         <a  class="m-1" href="">Track Order</a>
+ 
+         <a  class="m-1" href="">Help</a>
+ 
+       </div>
+ 
+       <div class="col pt-5">
+         <h4 class="pl-1"><strong>Main Branch</strong></h4>
+         <div class="flex flex-col">
+            <a class="m-1" href=""></i>Bandra Mumbai</a>
+          <a class="m-1" href=""></i>Jayanagar Banglore</a>
+          <a class="m-1" href=""></i>Gurugram</a>
+          <a class="m-1" href=""></i>Delhi</a>
+          
+         </div>
+       </div>
+      </div>
+     </footer>
+    <div class="copyright-sec text-center text-xl font-bold p-2 bg-slate-400">
+      <p>
+        Copyrights © 2025 – All rights reserved.
+        <span class="text-red-500"> <a href="">Bhoomi Techzoon Pvt Ltd</a></span>
+      </p>
+    </div>
+    <script src="./main.js"></script>
+
+     <!-- AOS liberary Link -->
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+     integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+   <script>
+     AOS.init({
+       Duration: 1000,
+       offset: 200,
+       delay: 100,
+     });
+   </script>
+  </body>
+</html>

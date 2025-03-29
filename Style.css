@@ -1,0 +1,567 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  background-color: #edeff5;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#header img {
+  width: 90px;
+}
+
+#products{
+  margin-bottom: 20px;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-items li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+.navbar-items li a {
+  text-decoration: none;
+  transition: 0.5s ease-in;
+}
+
+.navbar-items li a:hover,
+.navbar-items li a.active {
+    color: rgb(78, 189, 111);
+}
+
+.navbar-items li a.active::after,
+.navbar-items li a:hover::after{
+content: "";
+width: 45%;
+height: 3px;
+font-weight: bold;
+background-color:  rgb(83, 197, 117);
+position: absolute;
+bottom: -4px;
+left: 20px;
+}
+#close
+{
+  display: none;
+}
+#mobile
+{
+  display: none;
+  align-items: center;
+}
+
+/* hero section */
+.Hero
+{
+    background-image: url("./hero4.png");
+    height: 88vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.shop-box
+{
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 8%;
+  right:  90px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+
+
+.blink-animation {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+ #features .fe-box
+{
+ margin:10px;
+ border:2px solid rgb(70, 68, 68);
+ border-radius: 10px;
+ box-shadow: 0px 8px 10px 0px black;
+ overflow: hidden;
+}
+
+#features .fe-box img:hover{
+  transform: scale(1.1);
+  transition: ease-in 0.5s;
+
+}
+.card
+{
+  border-radius: 15px;
+  box-shadow: 0px 8px 10px 0px black;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card img{
+  border-radius: 20px;
+}
+.card img:hover{
+  transform: scale(1.2);
+  transition: ease-in 0.5s;
+}
+.card a{
+  color: green;
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  bottom: 2px;
+}
+
+/* banner section  */
+
+#banner
+{
+  height: 50vh;
+  width: 100%;
+  background-image: url("./images/banner img/b2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#sm-banner .banner-box
+{
+  height: 50vh;
+  min-width: 700px;
+  background-image: url("./images/banner img/b18.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#sm-banner .banner-box-2
+{
+  height: 50vh;
+  min-width: 700px;
+  background-image: url("./images/banner img/b17.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#sm-banner .banner-box:hover button
+{
+ background-color: green;
+}
+#banner-3{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ 
+#banner-3 .banner-box{
+  height: 35vh;
+  min-width: 30%;
+  background-image: url("https://www.middletonshoppingcentre.co.uk/wp-content/uploads/2024/04/Mobile-Middleton-Slider-Image-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#banner-3 .box2{
+ 
+  background-image: url("./images/banner img/b4.jpg");
+  background-size: cover;
+}
+#banner-3 .box3{
+ 
+  background-image: url("./images/banner img/b7.jpg");
+  background-size: cover;
+}
+
+#newsletter
+{
+  width: 100%;
+  background-image: url("./images/banner img/neawletter img.avif");
+  background-repeat: no-repeat;
+  background-position: 30% 20%;
+  background-size: cover;
+}
+/* footer */
+
+.col a:hover
+{
+  color: rgb(17, 92, 17);
+ font-weight: bold;
+}
+
+
+ 
+/* login page css */
+
+.Login-page{
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.cuddlynest.com/blog/wp-content/uploads/2022/08/shopping-in-san-francisco-scaled.jpg");
+}
+
+
+/* shopping page  */
+
+.shoping_page
+{
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/11/10/60057/shopping-31.jpg");
+    height: 80vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.shoping_page h4
+{
+  font-size: 5vw;
+  position: absolute;
+  left: 35%;
+  background-color: rgba(248, 248, 248, 0.623);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+
+
+/* About us  page  */
+
+.about_page
+{
+    background-image: url("https://images.pexels.com/photos/3768005/pexels-photo-3768005.jpeg?cs=srgb&dl=pexels-willoworld-3768005.jpg&fm=jpg");
+    height: 50vh;
+    width: 100%;
+    background-position: top 55% right 10%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.about_page h4
+{
+  font-size: 5vw;
+  position: absolute;
+  left: 35%;
+  background-color: rgba(109, 108, 108, 0.623);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.Team-section div
+{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Team-section div:hover
+{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: ease-in 0.2s;
+}
+
+/* brands page  */
+
+.Brands_page
+{
+    background-image: url("./brands.webp");
+    height: 80vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.Brands_page h4
+{
+  font-size: 7vw;
+  position: absolute;
+  left: 35%;
+  background-color: rgba(248, 248, 248, 0.623);
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#brands_banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#brands_banner .banner-box{
+  height: 35vh;
+  min-width: 30%;
+  background-image: url("https://threebestrated.in/images/LifestyleStores-Pune-MH.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+#brands_banner button
+{
+  margin-top: 25vh;
+  margin-left: 35%;
+}
+
+#brands_banner .box2{
+ 
+  background-image: url("https://i.pinimg.com/736x/7d/55/7b/7d557b99c218ffca8136916fbbddb1a5.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+#brands_banner .box3{
+ 
+  background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F6a189553-c580-451d-b4a3-083dac65cd02.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1");
+  background-size: cover;
+  cursor: pointer;
+}
+
+
+@media (max-width:1280px)
+{
+  #sm-banner .banner-box
+  {
+    height: 50vh;
+    min-width: 500px;
+  }
+  #banner-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+}
+
+@media (max-width:1024px)
+{
+  .feature .fe-box img
+  {
+    width: 224px;
+  }
+  #sm-banner .banner-box
+  {
+    height: 50vh;
+    min-width: 450px;
+  }
+  #products .card{
+    width: 176px;
+  }
+  #banner-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+#banner-3 .banner-box
+{
+  width: 30%;
+}
+}
+
+@media (max-width:768px)
+{
+  .navbar-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.04);
+    padding: 80px 0 0 10px;
+    transition: 0.5s ease-in-out;
+  }
+  .navbar-items.active
+  {
+    right: 0px;
+  }
+ 
+  #mobile
+  {
+    display: block;
+    align-items: center;
+  }
+  .navbar-items li{
+    margin-bottom: 25px
+  }
+  #close
+  {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+  }
+  .feature
+  {
+    justify-content: center;
+  }
+  #banner-content h3
+  {
+   margin-top: 250px;
+  }
+  /* #sm-banner .banner-box-2
+{
+  margin: 20px;
+  height: 50vh;
+  width: 100%;
+} */
+  #banner-3
+  {
+    padding: 0 40px;
+  }
+  #banner-3 .banner-box
+  {
+    width: 100%;
+  }
+  #brands_banner
+  {
+    padding: 0 40px;
+  }
+  #brands_banner .banner-box
+  {
+    width: 100%;
+  }
+
+  #brands_banner button
+{
+  margin-top: 25vh;
+  margin-left: 45%;
+}
+  #products .card{
+    width: 180px;
+  }
+
+  .shoping_page
+{
+   
+    background-position: top 50%  left 40%;
+    background-size: cover;
+    padding: 0 80px;
+   
+}
+
+.Hero
+{
+    
+    background-position: top 25% right 20%;
+   
+}
+.shop-box
+{
+  height: 80px;
+  width: 80px;
+  bottom: 10%;
+  right:  750px;
+}
+}
+
+
+
+
+
+
+@media (max-width:477px)
+{
+  #sm-banner .banner-box {
+    height: 50vh;
+    min-width: 100%;
+}
+  #banner-3 .banner-box
+  {
+    width: 100%;
+  }
+  .col h4
+  {
+    margin-top: 5px;
+  }
+  #products .card{
+    width: 100%;
+  }
+  
+.shoping_page h4
+{
+  font-size: 10vw;
+  position: absolute;
+  left: 17%;
+}
+ 
+.about_page h4
+{
+
+  left: 30%;
+
+}
+.Brands_page
+{
+    background-position: top 25% right 25%;
+}
+.Brands_page h4
+{
+  left: 23%;
+
+}
+#brands_banner button
+{
+  margin-top: 25vh;
+  margin-left: 30%;
+}
+.shop-box
+{
+  height: 60px;
+  width: 60px;
+  bottom: 6%;
+  right:  25px;
+}
+}
+
